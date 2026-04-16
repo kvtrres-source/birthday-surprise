@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9ecf, #ffd6e8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .contenedor {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+            max-width: 500px;
+        }
+        h1 {
+            color: #e91e63;
+        }
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: #e91e63;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #d81b60;
+        }
+        #sorpresa {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>🎉 Tengo una sorpresa para ti 🎉</h1>
+        <button onclick="mostrarSorpresa()">Haz clic aquí ❤️</button>
+        <div id="sorpresa">
+            <h1>Feliz Cumpleaños Mi Amor ❤️</h1>
+            <p>
+                Hoy celebro tu vida y lo especial que eres para mí.  
+                Gracias por existir y por iluminar mis días.  
+                Te deseo un cumpleaños lleno de amor, alegría y momentos hermosos. 🎂✨
+            </p>
+            <img src="https://via.placeholder.com/300x200.png?text=Tu+Foto+Aqui" alt="Foto especial">
+        </div>
+    </div>
+    <script>
+        function mostrarSorpresa() {
+            document.getElementById("sorpresa").style.display = "block";
+        }
+    </script>
+</body>
+</html>
